@@ -1,6 +1,5 @@
 # Kayser Ahmed Portfolio Website
 
-This is a static portfolio website generated from `Kayser_s_ATS_CV.pdf`.
 
 ## Files
 
