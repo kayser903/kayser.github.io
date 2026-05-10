@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Md Kayser Ahmed Hridoy, biomedical AI researcher working on retinal image analysis, graph learning, and medical image segmentation."
+    />
+    <title>Md Kayser Ahmed Hridoy | Biomedical AI Portfolio</title>
+    <link rel="preload" as="image" href="assets/hero-retinal-map.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span class="brand-text">Kayser Ahmed</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-art"
+          src="assets/hero-retinal-map.png"
+          alt="Retinal fundus analysis visual with neural graph overlays"
+        />
+        <canvas class="neural-canvas" id="neuralCanvas" aria-hidden="true"></canvas>
+        <div class="hero-vignette" aria-hidden="true"></div>
+
+        <div class="hero-grid page-pad">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Biomedical AI Researcher · Medical Imaging · Graph Learning</p>
+            <h1 id="hero-title">Md Kayser Ahmed Hridoy</h1>
+            <p class="hero-lede">
+              I build clinically minded deep learning systems for retinal and multimodal medical imaging,
+              with work spanning segmentation, CVD phenotype classification, diabetic retinopathy analysis,
+              and MRI-based Alzheimer&apos;s prediction.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-primary" href="#projects">
+                <span>Explore Work</span>
+                <span class="button-icon" aria-hidden="true">→</span>
+              </a>
+              <a class="button button-secondary" href="assets/Kayser-Ahmed-Hridoy-CV.pdf" download>
+                <span>Download CV</span>
+                <span class="button-icon" aria-hidden="true">↓</span>
+              </a>
+            </div>
+          </div>
+
+          <aside class="signal-panel" data-reveal aria-label="Research snapshot">
+            <p class="panel-label">Research Snapshot</p>
+            <div class="signal-metric">
+              <span>8</span>
+              <p>publications and manuscripts across IEEE, Elsevier, Springer, and IEEE Access venues</p>
+            </div>
+            <div class="signal-grid">
+              <div>
+                <strong>Q1 Elsevier</strong>
+                <span>Pattern Recognition Letters acceptance</span>
+              </div>
+              <div>
+                <strong>88.14%</strong>
+                <span>Dice coefficient in TransAttUnet++</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>thesis evaluation score</span>
+              </div>
+              <div>
+                <strong>2026</strong>
+                <span>MSc Electronics &amp; ICT, University of Antwerp</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="cred-strip" aria-label="Research credibility">
+        <div class="cred-track">
+          <span>Pattern Recognition Letters</span>
+          <span>IEEE CSNT</span>
+          <span>SIPCOV</span>
+          <span>BECITHCON</span>
+          <span>Biomedical Signal Processing and Control</span>
+          <span>Image and Vision Computing</span>
+          <span>IEEE Multimedia</span>
+          <span>IEEE Access</span>
+        </div>
+      </section>
+
+      <section class="section intro-section page-pad" aria-labelledby="intro-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Research Direction</p>
+          <h2 id="intro-title">AI systems for imperfect, real-world clinical data.</h2>
+        </div>
+        <div class="intro-grid">
+          <article class="feature-card" data-reveal>
+            <span class="feature-index">01</span>
+            <h3>Retinal Phenotype Classification</h3>
+            <p>
+              CNN and graph-attention pipelines for CVD-associated retinal phenotype classification using
+              fundus images, superpixel hierarchies, and multi-feature retinal maps.
+            </p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-index">02</span>
+            <h3>Medical Image Segmentation</h3>
+            <p>
+              Attention-guided U-Net, Transformer, ResAttU-Net, and frequency-refinement approaches for
+              robust segmentation in retinal, skin lesion, and MRI workflows.
+            </p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-index">03</span>
+            <h3>Deployable Research Pipelines</h3>
+            <p>
+              Reproducible training, validation, mixed-precision optimization, and practical inference
+              interfaces designed for research teams and non-technical end users.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section page-pad" id="research" aria-labelledby="research-title">
+        <div class="section-heading sticky-heading" data-reveal>
+          <p class="eyebrow">Research Experience</p>
+          <h2 id="research-title">From retinal biomarkers to multimodal MRI prediction.</h2>
+          <p>
+            My research work sits at the point where medical imaging, experimental rigor, and practical AI
+            deployment meet.
+          </p>
+        </div>
+        <div class="timeline" aria-label="Research roles">
+          <article class="timeline-item" data-reveal>
+            <span class="timeline-date">Jul 2025 - Dec 2025</span>
+            <h3>Research Intern, Biomedical Imaging Laboratory</h3>
+            <p class="timeline-place">Department of Electronics &amp; Communication Engineering, NIT Silchar</p>
+            <ul>
+              <li>Designed deep learning pipelines for diabetic retinopathy analysis from retinal fundus images.</li>
+              <li>Evaluated CNN architectures under heterogeneous imaging conditions and multi-source datasets.</li>
+              <li>Contributed to manuscript preparation for IEEE and Elsevier-indexed publications.</li>
+            </ul>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <span class="timeline-date">May 2025 - Jun 2025</span>
+            <h3>Research Intern, SERB SSR Project</h3>
+            <p class="timeline-place">Science and Engineering Research Board, Government of India</p>
+            <ul>
+              <li>Built MRI workflows for Alzheimer&apos;s disease risk prediction using ResAttU-Net and CNN classifiers.</li>
+              <li>Performed multimodal MRI preprocessing, grey matter extraction, and performance evaluation.</li>
+              <li>Co-authored a Q1 journal manuscript submitted to Biomedical Signal Processing and Control.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section publications-section page-pad" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading wide-heading" data-reveal>
+          <p class="eyebrow">Publications</p>
+          <h2 id="publications-title">Peer-reviewed and under-review work across medical imaging AI.</h2>
+        </div>
+
+        <div class="publication-grid">
+          <article class="publication-card highlight" data-reveal>
+            <span class="publication-status">Published · Q1 Elsevier</span>
+            <h3>RGAT: Retinal Graph Attention Networks with Superpixel Based Feature Hierarchies</h3>
+            <p>Pattern Recognition Letters, 2026</p>
+            <a href="https://doi.org/10.1016/j.patrec.2026.04.027" target="_blank" rel="noreferrer">DOI</a>
+          </article>
+          <article class="publication-card" data-reveal>
+            <span class="publication-status">Published · IEEE</span>
+            <h3>Classification of Cardiovascular Diseases through Retinal Fundus Images Using Deep Learning</h3>
+            <p>14th IEEE CSNT, VIT Bhopal, 2025</p>
+            <a href="https://doi.org/10.1109/CSNT64827.2025.10969053" target="_blank" rel="noreferrer">DOI</a>
+          </article>
+          <article class="publication-card" data-reveal>
+            <span class="publication-status">Published · Springer</span>
+            <h3>Robust Microaneurysm Detection in Retinal Fundus Images Using Optimized ResNet50-UNet</h3>
+            <p>2nd SIPCOV, NIT Silchar, 2025</p>
+            <a href="https://doi.org/10.1007/978-3-032-15809-3_16" target="_blank" rel="noreferrer">DOI</a>
+          </article>
+          <article class="publication-card" data-reveal>
+            <span class="publication-status">Accepted · IEEE</span>
+            <h3>Edge-Guided U-Net with Frequency Domain Refinement for Skin Lesion Segmentation</h3>
+            <p>BECITHCON, Dhaka, 2025</p>
+            <a href="https://doi.org/10.1109/BECITHCON69222.2025.11504184" target="_blank" rel="noreferrer">DOI</a>
+          </article>
+        </div>
+
+        <div class="under-review" data-reveal>
+          <h3>Under Review</h3>
+          <div class="review-list">
+            <p>Multi-feature retinal maps for CVD-associated phenotype classification · Image and Vision Computing</p>
+            <p>MAGIC-DR graph-based microaneurysm identification and classification · IEEE Multimedia</p>
+            <p>ResAttUNet and multi-stage Alzheimer&apos;s disease prediction from MRI · Biomedical Signal Processing and Control</p>
+            <p>FD-GNet for early classification of retinal abnormalities · IEEE Access</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section page-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading wide-heading" data-reveal>
+          <p class="eyebrow">Selected Projects</p>
+          <h2 id="projects-title">Research prototypes with measurable model behavior.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-reveal data-tilt>
+            <img src="assets/project-transattunet.png" alt="Attention guided U-Net architecture visualization" />
+            <div class="project-content">
+              <p class="project-meta">PyTorch · Python · Nov 2024 - Jan 2025</p>
+              <h3>TransAttUnet++</h3>
+              <p>
+                Hybrid U-Net and Transformer self-attention segmentation model with frequency-domain attention,
+                multi-scale skip connections, and residual pathways.
+              </p>
+              <div class="metric-row">
+                <span>88.14% Dice</span>
+                <span>95.32% Accuracy</span>
+              </div>
+              <a href="https://github.com/kayser903/TransAttUNet-Plus-Plus-Project" target="_blank" rel="noreferrer">Open Project</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-tilt>
+            <img src="assets/project-retinal-graph.png" alt="Retinal graph attention network visualization" />
+            <div class="project-content">
+              <p class="project-meta">PyTorch Geometric · CNN · Graph Attention</p>
+              <h3>RGAT Retinal Graph Networks</h3>
+              <p>
+                Retinal superpixel hierarchy and graph-attention approach for CVD-associated retinal phenotype
+                classification from fundus imagery.
+              </p>
+              <div class="metric-row">
+                <span>Q1 Elsevier</span>
+                <span>Retinal AI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-tilt>
+            <img src="assets/project-mri-ai.png" alt="MRI segmentation and Alzheimer prediction visualization" />
+            <div class="project-content">
+              <p class="project-meta">ResAttU-Net · MRI · Multimodal AI</p>
+              <h3>Alzheimer&apos;s MRI Prediction</h3>
+              <p>
+                Grey matter segmentation, multimodal MRI preprocessing, and CNN-based risk prediction pipeline
+                for Alzheimer&apos;s disease research.
+              </p>
+              <div class="metric-row">
+                <span>Q1 submission</span>
+                <span>Clinical imaging</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-tilt>
+            <img src="assets/project-oct-lung.png" alt="Lung OCT classification visual with dense network motif" />
+            <div class="project-content">
+              <p class="project-meta">TensorFlow · Keras · Feb 2024 - Apr 2024</p>
+              <h3>DenseNet OCT Classification</h3>
+              <p>
+                DenseNet169 multiclass classification for lung OCT images with augmentation, performance metrics,
+                and a Tkinter inference interface.
+              </p>
+              <div class="metric-row">
+                <span>3 classes</span>
+                <span>GUI inference</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section education-section page-pad" aria-labelledby="education-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Education &amp; Recognition</p>
+          <h2 id="education-title">A foundation built across engineering, research, and scholarship.</h2>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card" data-reveal>
+            <h3>University of Antwerp</h3>
+            <p>Master of Science, Electronics &amp; ICT Engineering Technology</p>
+            <span>Expected September 2026 · Antwerp, Belgium</span>
+          </article>
+          <article class="education-card" data-reveal>
+            <h3>NIT Silchar</h3>
+            <p>B.Tech, Electronics &amp; Communication Engineering</p>
+            <span>2021 - 2025 · First Class · Thesis awarded full marks</span>
+          </article>
+          <article class="education-card award-card" data-reveal>
+            <h3>Best Project Thesis Award</h3>
+            <p>Ranked 1st in AI Track and 4th overall among 65 competing groups.</p>
+            <span>Department of ECE, NIT Silchar · May 2025</span>
+          </article>
+          <article class="education-card award-card" data-reveal>
+            <h3>ICCR Scholarship</h3>
+            <p>Government of India merit scholarship covering full B.Tech study in India.</p>
+            <span>Indian Council for Cultural Relations · 2021 - 2025</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="page-pad">
+          <div class="section-heading wide-heading" data-reveal>
+            <p class="eyebrow">Technical Stack</p>
+            <h2 id="skills-title">Tools for medical imaging research from prototype to paper.</h2>
+          </div>
+        </div>
+        <div class="skill-marquee" aria-label="Core skills">
+          <div class="skill-track">
+            <span>Python</span>
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>Keras</span>
+            <span>TorchVision</span>
+            <span>PyTorch Geometric</span>
+            <span>OpenCV</span>
+            <span>Scikit-learn</span>
+            <span>NetworkX</span>
+            <span>NumPy</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
+            <span>Seaborn</span>
+            <span>Jupyter</span>
+            <span>GitHub</span>
+          </div>
+        </div>
+        <div class="skill-columns page-pad">
+          <article data-reveal>
+            <h3>Modeling</h3>
+            <p>CNNs, U-Net variants, Transformer attention, graph neural networks, classification, segmentation.</p>
+          </article>
+          <article data-reveal>
+            <h3>Research Workflow</h3>
+            <p>Dataset integration, preprocessing, ablation, validation, scientific writing, peer review.</p>
+          </article>
+          <article data-reveal>
+            <h3>Collaboration</h3>
+            <p>Technical communication, team coordination, Overleaf, Google Workspace, Microsoft Office, Canva Pro.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section service-section page-pad" aria-labelledby="service-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Academic Service</p>
+          <h2 id="service-title">Community work, review experience, and student leadership.</h2>
+        </div>
+        <div class="service-list">
+          <article data-reveal>
+            <span>2025 - 2026</span>
+            <h3>Peer Reviewer</h3>
+            <p>Biomedical Signal Processing and Control, Elsevier Q1 Journal.</p>
+          </article>
+          <article data-reveal>
+            <span>2024 - 2025</span>
+            <h3>Convener</h3>
+            <p>Prothom Alo Bondhushova, NIT Silchar Subsection.</p>
+          </article>
+          <article data-reveal>
+            <span>2023 - 2024</span>
+            <h3>Volunteer</h3>
+            <p>Technoesis Annual Technical Festival, organizing STEM outreach for 200+ students.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section page-pad" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel" data-reveal>
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let&apos;s build research that survives the clinic.</h2>
+            <p>
+              I am open to research collaborations, graduate opportunities, and biomedical AI projects focused
+              on robust medical image analysis.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:Kayserahmed903@gmail.com">
+              <span>Email Me</span>
+              <span class="button-icon" aria-hidden="true">→</span>
+            </a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/kayser903/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button button-secondary" href="https://github.com/kayser903" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://scholar.google.com/citations?hl=en&user=q4_pm7UAAAAJ&view_op=list_works" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a class="button button-secondary" href="https://orcid.org/0009-0002-9960-1027" target="_blank" rel="noreferrer">ORCID</a>
+            <a class="button button-secondary" href="https://www.researchgate.net/profile/Kayser-Hridoy?ev=hdr_xprf" target="_blank" rel="noreferrer">ResearchGate</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-pad">
+      <p>© 2026 Md Kayser Ahmed Hridoy. Biomedical AI, retinal imaging, and graph learning.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
